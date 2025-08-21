@@ -5,6 +5,8 @@ services:
       context: ./airlines
     ports:
       - "8080:8080"
+    env_file:
+      - ./airlines/.env
   flights:
     build: 
       context: ./flights

@@ -1,8 +1,4 @@
 # 🚀 PoV Flight Simulator 🚀
-jajajajajaj
-anything
-
-
 
 Welcome to the PoV Flight Simulator
 
