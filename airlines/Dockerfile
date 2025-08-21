@@ -22,5 +22,8 @@ COPY --from=build /app/build/libs/*.jar app.jar
 # Expose the port the application runs on
 EXPOSE 8080
 
+# Variables
+ENV PARAM_NAME=""
+
 # Set the command to run the application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-javaagent:grafana-opentelemetry-java.jar", "-jar", "app.jar"]
